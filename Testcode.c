@@ -2,5 +2,10 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-  printf("%d,1 - %d", argc, argv[1][0]);
+  if(argc > 2) {
+    printf("%d,1 - %d", argc, argv[1][0]);
+    return 0;
+  else {
+    return -1;
+  }
 }
